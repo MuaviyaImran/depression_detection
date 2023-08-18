@@ -52,14 +52,14 @@ export default function Signin() {
         <title>Sign In</title>
       </Head>
       <section className="flex min-h-screen items-center justify-center bg-[url('/assets/login.jpg')] bg-cover bg-no-repeat">
-        <div className="w-3/4 m-5  bg-[url('/assets/login.jpg')] bg-cover bg-no-repeat p-6">
+        <div className="m-5 w-3/4  bg-[url('/assets/login.jpg')] bg-cover bg-no-repeat p-6">
           <FontAwesomeIcon
             className="mx-10"
             icon={faBrain}
             size="9x"
             color="#2a2a68"
           />
-          <h2 class="mx-10 text-[120px] text-[#2a2a68]">
+          <h2 className="mx-10 text-[120px] text-[#2a2a68]">
             <i>
               <b>ADSLC</b>
             </i>
@@ -81,7 +81,7 @@ export default function Signin() {
             <h1 className="text-center text-4xl font-bold text-gray-800">
               Welcome Back
             </h1>
-            <h1 className="text-center text-4xl pb-5 font-bold text-gray-800">
+            <h1 className="pb-5 text-center text-4xl font-bold text-gray-800">
               SignIn to Your Account
             </h1>
           </div>
@@ -130,9 +130,11 @@ export default function Signin() {
             )}
 
             <div>
-              <Link className="text-[black]" href="/forgot"><b>Forgot password?</b></Link>
+              <Link className="text-[black]" href="/forgot">
+                <b>Forgot password?</b>
+              </Link>
             </div>
-            
+
             <div className="mt-2 flex flex-col gap-2">
               {error && (
                 <span className="text-center text-sm text-rose-500">
@@ -147,8 +149,10 @@ export default function Signin() {
                 Login
               </button>
             </div>
-            <div >
-              <Link className="text-[black]" href="/signup"><b>Dont have an Account? Signup</b></Link>
+            <div>
+              <Link className="text-[black]" href="/signup">
+                <b>Dont have an Account? Signup</b>
+              </Link>
             </div>
           </form>
         </div>
